@@ -1,8 +1,8 @@
 ---
-- hosts: tomcatServer
+- hosts: localhost
   vars:
-  - warName: helloworld.war
-  - warRemotePath: /path/to/put/war
+  - warName: sample.war
+  - warRemotePath: /var/lib/tomcat7/webapps
 
   tasks:
   - name: Download WAR to server
